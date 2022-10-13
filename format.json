@@ -1,0 +1,44 @@
+{
+    "$schema":"http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "text": {
+            "type":"string"
+        },
+        "source": {
+            "type":"string"
+        },
+        "class": {
+            "type": "array",
+            "items": {
+                "enum": ["Street", "Avenue", "Boulevard"]
+            }
+        },
+        "sentences": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "sentence":  {
+                        "type":"string"
+                    },
+                    "sign_language": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "voice":{
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "required":[
+                    "sentence"
+                ]
+            }
+        }
+    }
+}
