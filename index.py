@@ -12,11 +12,16 @@ if __name__ == '__main__':
                 html, body, [class*="css"],[class="ag-cell-value"]  {
                 font-family: 'Arial' !important;
                 }
-                .ag-cell-value{
+                div.ag-cell-wrapper {
+                    font-size: 12px !important;
+                    font-family: 'Arial' !important;
+                }
+                span.ag-cell-value{
                     font-family: 'Arial' !important;
                 }
                 div.ag-theme-alpine div.ag-row {
                     font-size: 12px !important;
+                    font-family: 'Arial' !important;
                 }
 
         </style>
